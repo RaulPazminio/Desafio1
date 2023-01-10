@@ -1,0 +1,418 @@
+body{
+	background: #F3F5FC;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+
+	position: absolute;
+	width: 120px;
+	height: 48px;
+	left: 40px;
+	top: 40px;
+}
+.logo img{
+	position: absolute;
+	left: 36.67%;
+	right: 37.43%;
+	top: 0%;
+	bottom: 0%;
+}
+#textoEscribir{
+	position: absolute;
+	width: 680px;
+	height: 288px;
+	left: 240px;
+	top: 168px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	/* or 48px */
+	color: #0A3871;
+	background: transparent;
+	border-color: transparent;
+
+}
+#textoEscribir::placeholder{
+	color: #0A3871;
+}
+#muñeco {
+	position: absolute;
+	width: 336px;
+	height: 304px;
+	left: 1032px;
+	top: 283px;
+}
+
+.rectangulo{
+	position: absolute;
+	width: 400px;
+	height: 944px;
+	left: 1000px;
+	top: 40px;
+
+	/* White */
+
+	background: #FFFFFF;
+	/* shadow */
+
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+.muñeco{
+	position: absolute;
+	width: 336px;
+	height: 304px;
+	left: 1032px;
+	top: 283px;
+}
+.cajaAdvertencia{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 16px;
+
+	position: absolute;
+	width: 336px;
+	height: 122px;
+	left: 1032px;
+	top: 619px;
+}
+
+.cajaAdvertencia label{
+	width: 336px;
+	height: 58px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+
+
+	text-align: center;
+
+	color: #343A40;
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+#textoCopiar{
+	width: 336px;
+	height: 48px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+
+	text-align: center;
+
+	color: #495057;
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	border-color: transparent;
+}
+
+.cajaExclamacion{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+
+	position: absolute;
+	width: 252px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+}
+.cajaExclamacion label{
+	width: 228px;
+	height: 18px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	/* identical to box height, or 18px */
+	/* Gray/gray-400 */
+	color: #495057;
+	opacity: 0.8;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.botones{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+
+	position: absolute;
+	width: 680px;
+	height: 67px;
+	left: 240px;
+	top: 885px;
+}
+#botonEncriptar{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	width: 328px;
+	height: 67px;
+
+	/* Dark blue/dark-blue-300 */
+
+	background: #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	cursor:pointer;
+}
+#botonEncriptar label{
+	width: 280px;
+	height: 19px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* White */
+
+	color: #FFFFFF;
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor:pointer;
+}
+#botonDesencriptar{
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	width: 328px;
+	height: 67px;
+
+	/* Dark blue/dark-blue-300 */
+
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	cursor:pointer;
+}
+#botonDesencriptar label{
+	width: 280px;
+	height: 19px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* Dark blue/dark-blue-300 */
+
+	color: #0A3871;
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor:pointer;
+}
+#botonCopiar{
+	display: none;
+	
+	width: 328px;
+	height: 67px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* Dark blue/dark-blue-300 */
+
+	color: #0A3871;
+
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	position: absolute;
+	left: 1032px;
+	top: 885px;
+
+	cursor: pointer;
+}
+#botonEncriptar:active, #botonDesencriptar:active, #botonCopiar: active{
+	background-color: #7D7CA5;
+}
+
+.rodapie {
+	position: relative;
+	display: block;
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+    margin: 1000px 0 0 0;	/*No tiene mucho sentido pero fue la unica solucion que encontré */
+	width: 1340px;
+	color: white;
+}
+
+@media screen and (min-width: 376px) and (max-width:768px){
+	.logo{
+		width: 31.09px;
+		height: 50.58px;
+		padding:73.42px 0 0 40px;	
+	}
+	#textoEscribir{
+		width: 688px;
+		left: 40px;
+		top: 240px;
+	}
+	.cajaExclamacion{
+		left: 40px;
+		top: 851px;
+	}
+	.botones{
+		left: 40px;
+		top: 885px;
+	}
+	
+	.muñeco, .rectangulo{
+		display: none;
+	}
+	.cajaAdvertencia{
+		padding: 32px;
+		gap: 32px;
+		width: 688px;
+		height: 133px;
+		left: 40px;
+		top: 1001px;
+
+		box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+	}
+	.cajaAdvertencia label{
+		width: 624px;
+		height: 29px;
+	}
+	.cajaAdvertencia #textoCopiar{
+		width: 624px;
+		height: 24px;
+		text-align: center;
+	}
+	#botonCopiar{
+		top: 1200px;
+		left: 200px;
+		margin: 32px auto;
+	}
+	.rodapie {
+		width: 720px;
+		margin: 1250px 0 0 0;
+	}
+}
+@media screen and (max-width:375px){
+	header{
+		position: absolute;
+		width: 375px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	.logo{
+		position: absolute;
+		left: 4.27%;
+		right: 87.2%;
+		top: 25%;
+		bottom: 25%;	
+	}
+	#textoEscribir{
+		position: absolute;
+		width: 343px;
+		left: 16px;
+		top: 152px;
+	}
+	.cajaExclamacion{
+
+		left: 16px;
+		top: 451px;
+	}
+	.botones{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 24px;
+
+		width: 343px;
+		height: 158px;
+		left: 16px;
+		top: 485px;
+	}
+	.muñeco, .rectangulo{
+		display: none;
+	}
+	.cajaAdvertencia{
+	
+		width: 327px;
+		height: 186px;
+		left: 24px;
+		top: 707px;
+
+		box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+	}
+	#botonCopiar{
+		/*width: 327px;
+		height: 186px;*/
+		left: 24px;
+		top: 893px;
+		margin: 24px 0;
+	}
+	.rodapie {
+		width: 310px;
+		margin: 920px 0 0 0;
+	}
+}
+

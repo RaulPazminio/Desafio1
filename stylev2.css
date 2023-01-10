@@ -1,0 +1,449 @@
+body{
+	background: #F3F5FC;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+
+	position: absolute;
+	width: 120px;
+	height: 48px;
+	left: 40px;
+	top: 40px;
+}
+.logo img{
+	position: absolute;
+	left: 36.67%;
+	right: 37.43%;
+	top: 0%;
+	bottom: 0%;
+}
+#textoEscribir{
+	position: absolute;
+	width: 680px;
+	height: 288px;
+	left: 240px;
+	top: 168px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	/* or 48px */
+	color: #0A3871;
+	background: transparent;
+	border-color: transparent;
+
+}
+#textoEscribir::placeholder{
+	color: #0A3871;
+}
+
+.rectangulo{
+	position: absolute;
+	width: 400px;
+	height: 944px;
+	left: 1000px;
+	top: 40px;
+
+	/* White */
+
+	background: #FFFFFF;
+	/* shadow */
+
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+
+#mensajeIngreso{
+	width: 336px;
+	height: 48px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+
+	text-align: center;
+
+	color: #495057;
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	border-color: transparent;
+}
+
+#textoCopiar{
+	position: absolute;
+	width: 336px;
+	height: 781px;
+	left: 1032px;
+	top: 72px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	/* Gray/gray-400 */
+	color: #495057;
+	background: transparent;
+	border-color: transparent;
+}
+.cajaExclamacion{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+
+	position: absolute;
+	width: 252px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+}
+.cajaExclamacion label{
+	width: 228px;
+	height: 18px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	/* identical to box height, or 18px */
+	/* Gray/gray-400 */
+	color: #495057;
+	opacity: 0.8;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+.botones{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+
+	position: absolute;
+	width: 680px;
+	height: 67px;
+	left: 240px;
+	top: 885px;
+}
+#botonEncriptar{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	width: 328px;
+	height: 67px;
+
+	/* Dark blue/dark-blue-300 */
+
+	background: #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	cursor:pointer;
+}
+#botonEncriptar label{
+	width: 280px;
+	height: 19px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* White */
+
+	color: #FFFFFF;
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor:pointer;
+}
+#botonDesencriptar{
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	width: 328px;
+	height: 67px;
+
+	/* Dark blue/dark-blue-300 */
+
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	cursor:pointer;
+}
+#botonDesencriptar label{
+	width: 280px;
+	height: 19px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* Dark blue/dark-blue-300 */
+
+	color: #0A3871;
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor:pointer;
+}
+#botonCopiar{
+	box-sizing: border-box;
+
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	position: absolute;
+	width: 336px;
+	height: 67px;
+	left: 1032px;
+	top: 885px;
+
+	/* Dark blue/dark-blue-300 */
+
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	background: transparent;
+	cursor:pointer;
+}
+#botonCopiar label{
+	width: 288px;
+	height: 19px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	color: #0A3871;
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	cursor:pointer;
+}
+#botonEncriptar:active, #botonDesencriptar:active, #botonCopiar:active{
+		background-color: #7D7CA5;
+}
+
+.rodapie {
+	display: block;
+	position: absolute;
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+    top: 1000px;
+    width: 1350px;
+    color: white;
+}
+
+@media screen and (min-width:376px) and (max-width:768px){
+	.logo{
+		position: absolute;
+		width: 31.09px;
+		height: 49.03px;
+		left: 40px;
+		top: 74.97px;
+	}
+	#textoEscribir{
+		width: 688px;
+		height: 288px;
+		left: 40px;
+		top: 240px;
+	}
+	.cajaExclamacion{
+		width: 229px;
+		left: 40px;
+		top: 836px;
+	}
+	.cajaExclamacion label{
+		width: 205px;
+	}
+	.botones{
+		flex-direction: row;
+		align-items: center;
+		width: 688px;
+		height: 67px;
+		left: 40px;
+		top: 870px;
+	}
+	.rectangulo{
+		display: none;
+	}
+	.Frame5{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 32px;
+		gap: 32px;
+
+		position: absolute;
+		width: 688px;
+		height: 343px;
+		left: 40px;
+		top: 1001px;
+
+		background: #FFFFFF;
+		box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+	}
+	.Frame5 #textoCopiar{
+		width: 624px;
+		height: 180px;
+		left: 0px;
+		top: 0px;
+		padding: 32px;
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+	}
+	.Frame5 #botonCopiar{
+		width: 624px;
+		left: 32px;
+		top: 247px;
+		padding: 32px;
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		align-items: center;
+		flex-grow: 0;
+	}
+	#botonCopiar label{
+		width: 576px;
+	}
+	.rodapie {
+	    top: 1450px;
+    	width: 740px;
+    }
+}
+@media screen and (max-width:375px){
+	.logo{
+		position: absolute;
+		width: 30.43px;
+		height: 48.03px;
+		left: 16px;
+		top: 23.97px;
+	}
+	#textoEscribir{
+		width: 343px;
+		height: 624px;
+		left: 16px;
+		top: 152px;
+	}
+	.cajaExclamacion{
+		width: 229px;
+		left: 40px;
+		top: 840px;
+	}
+	.cajaExclamacion label{
+		width: 205px;
+	}
+	.botones{
+		flex-direction: column;
+		align-items: center;
+		width: 343px;
+		height: 158px;
+		left: 16px;
+		top: 874px;
+	}
+	.rectangulo{
+		display: none;
+	}
+	.Frame5{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 32px;
+		gap: 32px;
+
+		position: absolute;
+		width: 343px;
+		height: 595px;
+		left: 16px;
+		right: 16px;
+		top: 1096px;
+
+
+		background: #FFFFFF;
+		box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+	}
+	.Frame5 #textoCopiar{
+		width: 279px;
+		height: 432px;
+		left: 0px;
+		top: 0px;
+		padding: 32px;
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+	}
+	.Frame5 #botonCopiar{
+		width: 279px;
+		left: 32px;
+		top: 432px;
+		padding: 32px;
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		align-items: center;
+		flex-grow: 0;
+	}
+	#botonCopiar label{
+		width: 231px;
+	}
+	.rodapie {
+		top: 1800px;
+	    width: 350px;
+	}
+}
