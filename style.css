@@ -292,7 +292,7 @@ body{
 	position: relative;
 	display: block;
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background: url(Imagenes/bg.jpg);
     padding:40px;
     margin: 1000px 0 0 0;	/*No tiene mucho sentido pero fue la unica solucion que encontré */
 	width: 1340px;
